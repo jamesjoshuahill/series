@@ -1,8 +1,9 @@
 class Series
   def initialize(digits)
+    @digits = digits
   end
 
   def slices(length)
-    ["0"]
+    @digits.chars
   end
 end
