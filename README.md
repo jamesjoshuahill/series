@@ -37,3 +37,7 @@ series.slices(6)  # => ArgumentError
 | "01", 2  | ["01"]       |
 | "012", 2 | ["01", "12"] |
 
+Dimensions:
+- input digits length
+- slice length
+

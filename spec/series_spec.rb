@@ -20,4 +20,9 @@ RSpec.describe Series do
     series = Series.new("012")
     expect(series.slices(2)).to eq(["01", "12"])
   end
+
+  it "slices 6 digits into 4 slices of 3" do
+    series = Series.new("982347")
+    expect(series.slices(3)).to eq(["982", "823", "234", "347"])
+  end
 end
