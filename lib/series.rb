@@ -4,6 +4,10 @@ class Series
   end
 
   def slices(length)
-    @digits.chars
+    if length == 1
+      return @digits.chars
+    end
+    
+    [@digits]
   end
 end
