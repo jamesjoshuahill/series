@@ -4,6 +4,8 @@ class Series
   end
 
   def slices(length)
+    raise ArgumentError if length > @digits.length
+
     consecutive_digits = @digits.each_cons(length)
     consecutive_digits.map(&:join)
   end

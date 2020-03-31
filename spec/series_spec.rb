@@ -25,4 +25,9 @@ RSpec.describe Series do
     series = Series.new("982347")
     expect(series.slices(3)).to eq(["982", "823", "234", "347"])
   end
+
+  it "fails when slice length is greater than digits length" do
+    series = Series.new("01234")
+    expect { series.slices(6) }.to raise_error(ArgumentError)
+  end
 end
