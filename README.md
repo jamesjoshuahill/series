@@ -28,6 +28,10 @@ series = Series.new("01234")
 series.slices(6)  # => ArgumentError
 ```
 
+This exercise is based on the Series exercise on [exercism.io](https://exercism.io).
+
+-----
+
 ## Input / Output
 
 | Input    | Output       |
@@ -40,4 +44,3 @@ series.slices(6)  # => ArgumentError
 Dimensions:
 - input digits length
 - slice length
-
